@@ -51,6 +51,8 @@ if __name__ == "__main__":
 
     q_s = curobo_fn.sample(5, mask_valid=False)
 
+    print("Joint Positions:")
+    print(q_s)
     d_world, d_self = curobo_fn.get_world_self_collision_distance_from_joints(q_s)
     print("Collision Distance:")
     print("World:", d_world)
